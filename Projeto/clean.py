@@ -10,7 +10,7 @@ st.header("Limpeza da Base de Dados")
 ############################################################################################################
 ### Ler os arquivos
 
-df = pd.read_csv("online_shoppers_intention.csv", sep=",")
+df = pd.read_csv("Projeto/online_shoppers_intention.csv")
 ##########################################################################################################
 
 df.Revenue.value_counts(dropna=False)
