@@ -189,6 +189,8 @@ st.write(df_5.groupby(col_5)[['BounceRates', 'Revenue']].mean())
 ############################################################################################################
 
 st.subheader("Teste novas divisões de clusters, variando entre 2 e 20.")
-n = st.number_input('Escolha um número:', min_value=1, max_value=20)
+n = st.number_input('Escolha um número:', min_value=2, max_value=20)
 
-kmeans(n)
+df_n, col_n = kmeans(n)
+
+st.write(df_n.groupby(col_n)[['BounceRates', 'Revenue']].mean())

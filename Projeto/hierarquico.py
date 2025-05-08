@@ -97,3 +97,5 @@ st.write(df_g[grupo].value_counts())
 
 df_n = df.reset_index().merge(df_g.reset_index(), how='left')
 st.write(df_n.groupby(['VisitorType', 'Revenue',grupo])['index'].count().unstack().fillna(0).astype(int))
+
+st.write(df_n.groupby(grupo)[['BounceRates', 'Revenue']].mean())
