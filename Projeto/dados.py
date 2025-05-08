@@ -10,7 +10,7 @@ st.write("Neste exercício vamos usar a base online shoppers purchase intention 
 
 ############################################################################################################
 ### Ler os arquivos
-df = pd.read_csv("Projeto/online_shoppers_intention.csv"")
+df = pd.read_csv("Projeto/online_shoppers_intention.csv")
 st.write("Pré-visualização dos dados:")
 st.dataframe(df)
 ##########################################################################################################

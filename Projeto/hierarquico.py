@@ -13,7 +13,7 @@ st.title("Ciências de Dados - EBAC")
 st.header("Agrupamento Hierarquico")
 
 
-df = pd.read_csv('Projeto/online_shoppers_intention.csv"')
+df = pd.read_csv("Projeto/online_shoppers_intention.csv")
 df = df.drop(df[df["VisitorType"] == "Other"].index)
 #############################################################################################################################
 
